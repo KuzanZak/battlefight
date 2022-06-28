@@ -1,11 +1,16 @@
 async function waitingForResponse() {
-const response = await fetch("https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/all.json")
-const fighterList = await response.json();
-getImageFighter(fighterList);
-// getCharacteristics(fighterList)
+    const response = await fetch("https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/all.json")
+    const fighterList = await response.json();
+    getImageFighter(fighterList);
+    // getCharacteristics(fighterList)
 }
 waitingForResponse()
 
+async function waitingForResponseId(id) {
+    const response = await fetch(`https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/id/${id}.json`)
+    const fighterCList = await response.json();
+    getCharacteristics(fighterCList);        
+}
 // async function waitingForResponseId() {
 //     const response = await fetch("https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/id/1.json")
 //     const fighterCList = await response.json();
@@ -107,16 +112,11 @@ function getFighter(){
         eachFighters.classList.add("list-champs-item");
         eachFighters.innerHTML = `<a class ="link-imgM" href="#"><img class="image-xs-middle" src="${img.src}"></a>`
     
-        async function waitingForResponseId() {
-            const response = await fetch(`https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/id/${li.dataset.id}.json`)
-            const fighterCList = await response.json();
-            getCharacteristics(fighterCList);        
-        }
-        waitingForResponseId()
-            
+        waitingForResponseId(li.dataset.id);
         li.remove()
     });
 }
+
 
 function getCharacteristics(array){
     listCharacteristics.innerHTML += `<li class="skills-fighters"><p class="characterisctis-name">${array.name}</p><p class="skills-ttl"><span class="span-ttl">Force :</span> ${array.powerstats.strength}</p>
