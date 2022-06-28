@@ -79,10 +79,6 @@ button:focus {
 
 
 /* Left-page */
-.main-content{
-
-}
-
 .left-page{
     border: 2px solid yellow;
 }
@@ -99,9 +95,6 @@ button:focus {
     scrollbar-width: thin;
 }
 
-.list-fighters-content{
-
-}
 
 .image-xs{
     width: 50%;
@@ -119,9 +112,6 @@ button:focus {
 
 .image-xs-middle{
     width: 30%;
-}
-.battle-fight{
-
 }
 
 /* Right-page */
