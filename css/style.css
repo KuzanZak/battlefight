@@ -98,17 +98,6 @@ button:focus {
     scrollbar-color: rebeccapurple green;
     scrollbar-width: thin;
 }
-/* .list-fighters{
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-row-gap: 1rem;
-    text-align: center;
-    width: 99%;
-    height: 30rem;
-    overflow-y: scroll;
-    scrollbar-color: rebeccapurple green;
-    scrollbar-width: thin;
-} */
 
 .list-fighters-content{
 
@@ -117,15 +106,20 @@ button:focus {
 .image-xs{
     width: 50%;
 }
-.image-xs-middle{
-    width: 30%;
+
+.link-img{
+    display: block;
 }
+
 
 /* Middle-page */ 
 .middle-page{
     border: 2px solid green;
 }
 
+.image-xs-middle{
+    width: 30%;
+}
 .battle-fight{
 
 }
@@ -141,5 +135,3 @@ button:focus {
 .displayB{
     display: block;
 }
-
-
