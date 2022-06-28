@@ -66,7 +66,11 @@ let eachChampName;
 function getImageFighter(array){
     let string ="";
     array.forEach(fighter => {
-        string += `<li class="list-champs-item" data-id="${fighter.id}"><a class="link-img" href="#"><img class="image-xs" src="${fighter.images.sm}"></a></li>`;
+        string += `<li class="list-champs-item" data-id="${fighter.id}">
+        <a class="link-img" href="#">
+        <img class="image-xs" src="${fighter.images.sm}">
+        </a>
+        </li>`;
     });
     listChamps.innerHTML = string;
     getFighter();
@@ -119,6 +123,12 @@ function getFighter(){
 }
 
 function getCharacteristics(array){
-    listCharacteristics.innerHTML += `<li class="skills-fighters"><p class="characterisctis-name">${array.name}</p><p class="skills-ttl"><span class="span-ttl">Force :</span> ${array.powerstats.strength}</p>
-    <p class="skills-ttl"><span class="span-ttl">Combat :</span>  ${array.powerstats.combat}</p><p class="skills-ttl"><span class="span-ttl">Power :</span> ${array.powerstats.durability}</p><p class="skills-ttl"><span class="span-ttl">Power :</span>  ${array.powerstats.power}</p></li>`; 
+    listCharacteristics.innerHTML += 
+    `<li class="skills-fighters">
+    <p class="characterisctis-name">${array.name}</p>
+    <p class="skills-ttl"><span class="span-ttl">Force :</span> ${array.powerstats.strength}</p>
+    <p class="skills-ttl"><span class="span-ttl">Combat :</span>  ${array.powerstats.combat}</p>
+    <p class="skills-ttl"><span class="span-ttl">Power :</span> ${array.powerstats.durability}</p>
+    <p class="skills-ttl"><span class="span-ttl">Power :</span>  ${array.powerstats.power}</p>
+    </li>`; 
 };
