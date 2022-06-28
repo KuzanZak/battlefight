@@ -1,0 +1,145 @@
+:root{
+    /* Size */
+    font-size: 12px;
+
+    /* Colors */
+    --header-color: #F5F5DC;
+}
+
+/* NORMALIZER */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: black;
+    color: white;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    border: none;
+    background: none;
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+
+/* HEADER */ 
+.header-ttl{
+    margin: 1.5rem auto;
+    padding: 1rem;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: underline;
+    color: var(--header-color);
+    background: linear-gradient(10deg, red, blue);
+    width: 50%;
+}
+
+/* Main */ 
+.main-content{
+    display: grid;
+    grid-template-columns: 25% 50% 25%;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: .5rem;
+    margin: 1rem;
+} 
+
+.select-fighter-ttl, .battle-fight-ttl, .caracteristic-fighter-ttl{
+    text-align: center;
+    text-decoration: underline;
+    padding: 1rem;
+}
+
+
+/* Left-page */
+.main-content{
+
+}
+
+.left-page{
+    border: 2px solid yellow;
+}
+
+.list-champs, .list-fighters{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-row-gap: 1rem;
+    text-align: center;
+    width: 99%;
+    height: 30rem;
+    overflow-y: scroll;
+    scrollbar-color: rebeccapurple green;
+    scrollbar-width: thin;
+}
+/* .list-fighters{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-row-gap: 1rem;
+    text-align: center;
+    width: 99%;
+    height: 30rem;
+    overflow-y: scroll;
+    scrollbar-color: rebeccapurple green;
+    scrollbar-width: thin;
+} */
+
+.list-fighters-content{
+
+}
+
+.image-xs{
+    width: 50%;
+}
+.image-xs-middle{
+    width: 30%;
+}
+
+/* Middle-page */ 
+.middle-page{
+    border: 2px solid green;
+}
+
+.battle-fight{
+
+}
+
+/* Right-page */
+.right-page{
+    border: 2px solid pink;
+}
+
+.displayN{
+    display: none;
+}
+.displayB{
+    display: block;
+}
+
+
