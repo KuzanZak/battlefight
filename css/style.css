@@ -86,10 +86,11 @@ button:focus {
 .list-champs, .list-fighters{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(10, 9.2rem);
     grid-row-gap: 1rem;
     text-align: center;
     width: 99%;
-    height: 30rem;
+    height: 60rem;
     overflow-y: scroll;
     scrollbar-color: rebeccapurple green;
     scrollbar-width: thin;
@@ -119,9 +120,49 @@ button:focus {
     border: 2px solid pink;
 }
 
+.list-fighters-caracteristics{
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: repeat(10, 7.7rem);
+    /* grid-row-start: 1;*/
+    grid-row-gap: 1rem;
+    width: 99%;
+    height: 60rem;
+    overflow-y: scroll;
+    scrollbar-color: rebeccapurple green;
+    scrollbar-width: thin;
+    /* background-color: brown; */
+}
 .displayN{
     display: none;
 }
 .displayB{
     display: block;
+}
+
+.skills-fighters{
+    padding: .5rem 0;
+    margin: auto;
+    width: 75%;
+    text-align: center;
+    background-color: rgb(192, 191, 191);
+    line-height: 1.2;
+}
+
+.characterisctis-name{
+    text-transform: uppercase;
+    color: rgb(3, 3, 160);
+    font-size: 1rem;
+    font-weight: bold;
+    border-bottom: .1rem solid white;
+    margin-bottom: .5rem;
+    /* text-decoration: underline; */
+}
+
+.skills-ttl{
+    color: rgb(0, 95, 0);
+}
+
+.span-ttl{
+    color: rgb(197, 6, 6);
 }
