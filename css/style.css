@@ -19,6 +19,8 @@ body {
     background-image: url(../img/selectchamp.jpg);
     background-repeat: no-repeat;
     background-size: 100%;
+    /* background-position: bottom;     */
+    height: 100vh;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -156,7 +158,7 @@ button:focus {
 }
 
 .characterisctis-name{
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
     color: rgb(3, 3, 160);
     font-size: 1rem;
     font-weight: bold;
