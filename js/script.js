@@ -62,7 +62,7 @@ function getFighter(){
         } else if (event.target.hasAttribute("href")){
             li = event.target.parentElement;
             img = event.target.firstElementChild;          
-        }
+        } else return; 
     
         document.getElementById("list-fighters-battle").appendChild(listFighters);
         const eachFighters = document.createElement("li");
